@@ -8,7 +8,7 @@ In this notebook and (and additional scripts), I combine several exposures of th
 
 A snapshot of work in progress:
 
-![Okay, so I got a little lazy and made a contrast adjustment in GIMP, sue me.](/demo/16bit_master_gimp_compress.jpg "Preview")
+![Preview](/demo/16bit_master_gimp_compress.jpg "Okay, so I got a little lazy and made a contrast adjustment in GIMP, sue me.")
 
 
 I use darkfield analysis to estimate the noise floor of the Canon 600-D camera I used. I use an edge detection algorithm to find a first estimate of the centre of the solar disk. I crop the images down by a factor of $\approx 10$ to dramatically speed up the calculation of the correlation between images, the peak of which allows for registration of the images to within a few pixels, which is smaller than the point spread function of the camera optics. I then adjust the images by exposure time and compute the average RGB brightness of each point in the sky around the solar eclipse, including the solar wind whose brightness varies by four orders of magnitude. Images are not included in this repository (the raw CR2 files, plus the darkfield calibration, add up to some 10GB.)
