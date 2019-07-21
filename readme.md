@@ -15,7 +15,7 @@ The objective of this project is to produce a true-to-the-eye image of the solar
 
 A snapshot of work in progress:
 
-![](.\demo\16bit_master_gimp.png)
+![](.\demo\16bit_master_gimp_compress.png)
 
 Okay, so I got a little lazy and made a contrast adjustment in GIMP, sue me.
 
