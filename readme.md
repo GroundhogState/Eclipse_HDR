@@ -20,7 +20,7 @@ The objective of this project is to produce a true-to-the-eye image of the solar
 * **Colour recovery:** During the eclipse, stars are visible in a gently blue sky around the disk of the sun, a truly remarkable vision. Reproducing this image requires careful adjustment of the brightness levels whilst retaining as much of the global contrast as possible. Further, the bright red prominences are visible jutting out around the disk of the moon, which are washed out by the white light in the presently composed image. One way to make these visible is detailed work with image editing software, but this isn't desirable. It may be possible to enhance the visibility of these coronal mass ejections using the contrast enhancement methods above.
 * **Deblurring:** The camera optics have an intrinsic point spread function and spherical aberration. Worse, I also failed to ensure these images were perfectly focused, and the tripod I used was a lightweight aluminum one, which led to considerable camera shake. It may be possible to employ techniques from super-resolution imaging to overcome these and increase detail in the recovered image.
 
-
+* **Notes:** Phil Hart suggested using a radial gradient filter a la [Sekanina & Larson](http://articles.adsabs.harvard.edu/cgi-bin/nph-iarticle_query?1984AJ.....89.1408S&amp;data_type=PDF_HIGH&amp;whole_paper=YES&amp;type=PRINTER&amp;filetype=.pdf)
 
 ### General remarks
 
