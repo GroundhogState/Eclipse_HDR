@@ -24,4 +24,4 @@ The objective of this project is to produce a true-to-the-eye image of the solar
 
 ### General remarks
 
-In this project, I iterated over several different styles of workflow and algorithmic approaches. If I were to start it again, I'd do it differently and, I think, more efficiently. However, in this case, done is better than perfect, and I am more motivated to solve the outstanding challenges than fiddling with the existing process. 
+In this project, I iterated over several different styles of workflow and algorithmic approaches. If I were to start it again, I'd do it differently and, I think, more efficiently (for one, using OpenCV from the start). However, in this case, done is better than perfect, and I am more motivated to solve the outstanding challenges than fiddling with the existing process. 
