@@ -21,8 +21,9 @@ The objective of this project is to produce a true-to-the-eye image of the solar
 * **Deblurring:** The camera optics have an intrinsic point spread function and spherical aberration. Worse, I also failed to ensure these images were perfectly focused, and the tripod I used was a lightweight aluminum one, which led to considerable camera shake. It may be possible to employ techniques from super-resolution imaging to overcome these and increase detail in the recovered image.
 
 
-[A paper on blur kernel estimation](http://people.csail.mit.edu/sparis/publi/2011/cvpr_radon/Cho_11_Blur_Kernel_Estimation.pdf)
+* **Notes:** Phil Hart suggested using a radial gradient filter a la [Sekanina & Larson](http://articles.adsabs.harvard.edu/cgi-bin/nph-iarticle_query?1984AJ.....89.1408S&amp;data_type=PDF_HIGH&amp;whole_paper=YES&amp;type=PRINTER&amp;filetype=.pdf)
+
 
 ### General remarks
 
-In this project, I iterated over several different styles of workflow and algorithmic approaches. If I were to start it again, I'd do it differently and, I think, more efficiently. However, in this case, done is better than perfect, and I am more motivated to solve the outstanding challenges than fiddling with the existing process. 
+In this project, I iterated over several different styles of workflow and algorithmic approaches. If I were to start it again, I'd do it differently and, I think, more efficiently (for one, using OpenCV from the start). However, in this case, done is better than perfect, and I am more motivated to solve the outstanding challenges than fiddling with the existing process. 
