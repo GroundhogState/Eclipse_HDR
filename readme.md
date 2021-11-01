@@ -6,11 +6,11 @@ In this notebook and (and additional scripts), I combine several exposures of th
 
 ### Preview:
 
-A snapshot of work in progress:
+Some work-in-progress output.
 
 ![Preview](/demo/IMG-20200524-WA0007.jpg)
 ![Preview](/demo/IMG-20200527-WA0002.jpg)
-![Preview](/demo/IMG-20200657-WA0003.jpg)
+![Preview](/demo/IMG-20200527-WA0003.jpg)
 ![Preview](/demo/IMG-20200606-WA0013.jpg)
 ![Preview](/demo/IMG-20200608-WA0000.jpg)
 
