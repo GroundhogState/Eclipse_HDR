@@ -1,0 +1,91 @@
+STEP 1
+	set up imsaves
+Step 2
+	Look at stars
+		Add check in dark process to flag peak vals
+			What does the 90th percentile mask look like?
+Step 3
+	Look at radial sections
+
+
+% starfield analysis: In which we look at the subset of the image with
+% distinct points and devise a few tests.
+% We can use a chiral integration kernel on the direction of the gradient.
+% The kernel returns 1 (topological filter) when it encloses a peak
+% I can then use this kernel to find all isolated peaks. For ones nearby -
+% start with the known and suspected stars - we can use them as a common
+% ground truth to crack the PSF, noise correction, etc.
+%     Then test to see if we can determine stars from hot pixels!
+%             Expect correlation between channels, not just one colour?
+% I guess, you know, a gaussian filter would do fine to find them... surely
+    % ah but you gotta pick teh small ones
+
+Todo
+	Small dev
+		Radial intensity plotting (/contour intensity plotting)
+		Correlation fn: Stars vs hot pixels
+		Remove zeroing, in fact apply NO noise correction and see what top edge looks like
+		Use regression over the noise offset to find the correction for noise & exposure time
+			you KNOW the underlying intensity has to be the same, so you can find the 
+	Look into Baileys Beads...
+		Red channel, indiv. imgs, optimize correction via corrfun
+	What about looking at correlation betweem imgs *inside* the disk of the sun?
+
+	Bundle out function that
+		Gradient discontinuities...
+		Takes im gradients & FFT
+		Plots:
+			Raw 		num_samples
+			I grad 		I grad dir  	
+			FFT 		Phase						
+			r grad 		theta grad
+		Plot radial (and angular? sections through centre)
+	Apply to:
+		Darkfield
+		Sum img at various stages
+		save to:
+			stage/img/diagnostic
+		All raw images to find intrinsic features?
+	Cluster of bright points, below disk and bottom left
+
+
+Observations
+	Intensity gradient 'wobbles' in interior I_grad - noise offsetting and/or saturated threshold cutoff errs?
+		Saturation seems less likely the problem, so focus on noise & alignment 1st
+	Red splotches in the sky... ~ sensor noise scale or no?
+	The gradient colours (black/white) seem to be shorter-wavelengths *in the direction of* the differential vector??
+	What's up with the intensities?
+		Several (angular and radial) are VVV flat in the exposure area - I guess that's good, you can use it as a mask??
+		Coincides with one of the few grey ares in the circumferential filter
+	What are the amplitudes of these noise features? They are hard to spot in the colour image
+	Noise patterns differ in each case
+		- What about setting 
+	Short-wavelength noise
+		Period ~few pixels?
+	
+	Medium-wavelength,
+		~dozens of px?
+		Noise correction: of zeroing out, include all and then subtract from the mean
+			Should *increase* scale of blob functions in gradients
+				Could use cluster size as a cost function
+					Maximize wrt Noise cutoff
+	Both present in the radial & angular gradients
+		Correlation function between different gradient types should give length scales
+
+	flat spots in gradient img: fewer samples? 0 values?
+		Can use some integral as error fn
+			Could it be related to alignment?
+				Draw box around imgs
+					Output num_samples
+	Circumferential gradient
+		Thin bright lines! Saturated areas? Prob not. Consistent brightness though, v strong!
+			Black sections - negative gradients? Need to see in colour/bicolor?
+	Cartesian gradient
+		Same lengths scales present - but pattern structure slightly different?	
+
+
+Consider:
+	Before noise correction, take correlations of gradients?
+	Ah - theory for the edges -
+		They are where the inner image was below noise floor and set to zero in that area
+			So would need to know 
